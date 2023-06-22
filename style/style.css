@@ -1,0 +1,62 @@
+.body{
+    background-color: aquamarine;
+    height: 100vh;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+.large-size,.laptop,.tablets,.mobiles{
+    text-align: center;
+    display: none;
+}
+@media screen and (min-width:0px) {
+    .body{
+        background-color:crimson;
+    }
+    .mobiles{
+        display: block;
+    }
+}
+@media screen and (min-width:425px) {
+    .body{
+        background-color: aqua;
+    }
+    .mobiles{
+        display: none;
+    }
+    .tablets{
+        display: block;
+    }
+}
+@media screen and (min-width:768px) {
+    .body{
+        background-color: darkgoldenrod;
+    }
+    .mobiles{
+        display: none;
+    }
+    .tablets{
+        display: none;
+    }
+    .laptop{
+        display: block;
+    }
+}
+@media screen and (min-width:1024px) {
+    .body{
+        background-color: forestgreen;
+    }
+    .mobiles{
+        display: none;
+    }
+    .tablets{
+        display: none;
+    }
+    .laptop{
+        display: none;
+    }
+    .large-size{
+        display: block;
+    }
+}
